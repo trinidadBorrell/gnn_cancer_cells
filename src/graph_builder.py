@@ -31,9 +31,14 @@ class CellGraphBuilder:
     """
     
     LABEL_MAPPING = {
-        'sTIL': 0,
-        'nonTIL_stromal': 1,
-        'AMBIGUOUS': 2,
+        'AMBIGUOUS': 0,
+        'lymphocyte': 1,
+        'macrophage': 2,
+        'nonTILnonMQ_stromal': 3,
+        'other_nucleus': 4,
+        'plasma_cell': 5,
+        'tumor_mitotic': 6,
+        'tumor_nonMitotic': 7,
     }
     
     def __init__(
